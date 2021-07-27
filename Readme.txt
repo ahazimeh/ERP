@@ -10,3 +10,11 @@ php artisan serve
 cd front
 npm install
 npm start
+
+
+accoounts
+ali@gmail.com
+farah@gmail.com
+hussien@gmail.com
+
+password:12345678
