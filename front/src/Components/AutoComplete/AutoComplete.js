@@ -31,7 +31,6 @@ class AutoComplete extends React.Component {
   render() {
     let teams = [];
     if (this.state.teams != "") {
-      console.log(this.state.teams.data[0]);
       for (let i = 0; i < this.state.teams.data.length; i++) {
         teams.push(
           <div
@@ -48,7 +47,6 @@ class AutoComplete extends React.Component {
         );
       }
     }
-    console.log(this.state.teams);
     return (
       <div className="App">
         <div>

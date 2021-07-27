@@ -132,7 +132,6 @@ class Kpis extends Component {
     }
   }
   rows = (value) => () => {
-    console.log(value);
     let a = document.getElementsByClassName("rowsOptions");
     a[0].style.display = "none";
     rows = 0;
@@ -188,7 +187,6 @@ class Kpis extends Component {
   componentDidMount() {
     // if (this.props.location.state != undefined)
     // const { fromNotifications } = this.props.location.state;
-    console.log(this.props.location.state);
     if (this.props.location.state != undefined) {
       const { fromNotifications } = this.props.location.state;
       employeeId = fromNotifications;
@@ -287,10 +285,8 @@ class Kpis extends Component {
     this.handleModal();
   }
   handleInputChange = (e) => {
-    // console.log("a");
     // let file;
     // if (e.target.files) file = e.target.files[0];
-    // console.log(file);
     this.setState({
       [e.target.name]: e.target.value,
     });
@@ -384,7 +380,6 @@ class Kpis extends Component {
     var array = [];
     if (this.state.kpis.data != undefined) {
       for (let i = 0; i < this.state.kpis.data.length; i++) {
-        console.log(this.state.kpis.data[0].id);
         let c = i % 2;
         array.push(
           <div className={"row" + c + " rowData"}>

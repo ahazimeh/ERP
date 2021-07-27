@@ -253,15 +253,12 @@ class ManageAdmins extends Component {
     e.preventDefault();
     const data = this.state;
     let formData = new FormData();
-    console.log(this.state.name);
-    console.log(this.state.image);
 
     formData.append("image", this.state.image);
     formData.append("name", this.state.name);
     formData.append("email", this.state.email);
     formData.append("password", this.state.password);
 
-    console.log(this.state.image);
     if (id == 0)
       fetch("http://localhost:8000/api/user", {
         method: "post",
@@ -306,7 +303,6 @@ class ManageAdmins extends Component {
     // });
   };
   handleInputFileChange = (e) => {
-    console.log("a");
     let file;
     if (e.target.files) file = e.target.files[0];
     // console.log(file);

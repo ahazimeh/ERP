@@ -31,13 +31,11 @@ class LineChart extends Component {
   render() {
     let array = [];
     if (this.state.kpisd.data != undefined) {
-      console.log(this.state.kpisd.data);
       for (let i = 0; i < this.state.kpisd.data.length; i++) {
         let k = i + 1;
         array.push({ x: k, y: this.state.kpisd.data[i].level });
       }
     }
-    console.log(array);
     const options = {
       animationEnabled: true,
       exportEnabled: true,

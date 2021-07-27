@@ -44,7 +44,6 @@ const Login = (props) => {
       };
       storeData();
       const store = await AsyncStorage.getItem("token");
-      console.log(store);
     } else {
       alert("You are not authorized to login !");
     }

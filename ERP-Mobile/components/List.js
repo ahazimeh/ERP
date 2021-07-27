@@ -122,7 +122,6 @@ export default class Kpi extends React.Component {
     }
   };
   render() {
-    console.log(this.state.employees);
     var color = ["255,255,255", "245, 245, 245"];
 
     return (

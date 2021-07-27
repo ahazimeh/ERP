@@ -127,7 +127,6 @@ class KpisEmployee extends Component {
     }
   }
   rows = (value) => () => {
-    console.log(value);
     let a = document.getElementsByClassName("rowsOptions");
     a[0].style.display = "none";
     rows = 0;
@@ -183,7 +182,6 @@ class KpisEmployee extends Component {
   componentDidMount() {
     // if (this.props.location.state != undefined)
     // const { fromNotifications } = this.props.location.state;
-    console.log(this.props.location.state);
     const { fromNotifications } = this.props.location.state;
     employeeId = fromNotifications;
     this.props.title("KPI");
@@ -277,10 +275,8 @@ class KpisEmployee extends Component {
     this.handleModal();
   }
   handleInputChange = (e) => {
-    // console.log("a");
     // let file;
     // if (e.target.files) file = e.target.files[0];
-    // console.log(file);
     this.setState({
       [e.target.name]: e.target.value,
     });
